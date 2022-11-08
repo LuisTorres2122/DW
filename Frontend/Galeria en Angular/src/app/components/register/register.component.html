@@ -2,21 +2,32 @@
 	<div class="login">
 	  <div class="login-triangle"></div>
   
-	  <h2 class="login-header">Create an account</h2>
+	  <h2 class="login-header">Crear una cuenta</h2>
+	
   
-	  <form #frmRegister="ngForm" class="login-container" (ngSubmit)="onRegister(frmRegister)">
+	  <form #frmRegister="ngForm" class="login-container shadow filtro " (ngSubmit)="onRegister(frmRegister)">
+
 		<p>
-		  <input type="text" name="name" placeholder="name" ngModel required>
+		  <input type="text" name="name" placeholder="Nombre" ngModel required>
 		</p>
 		<p>
-		  <input type="email" name="email" placeholder="Email" ngModel required>
+		  <input type="email" name="email" placeholder="Correo Electrónico" ngModel required>
 		</p>
 		<p>
-		  <input type="password" name="password" placeholder="Password" ngModel required>
+		  <input type="password" name="password" placeholder="Contraseña" ngModel required>
 		</p>
-		<p>
-		  <input type="submit" value="Register">
-		</p>
+		<p class="centrarBoton" >
+			<!-- <input type="submit" value="Login"> -->
+			  <a href="../photos-list/" class="boton">
+				  <span id="span1"></span>
+				  <span id="span2"></span>
+				  <span id="span3"></span>
+				  <span id="span4" ></span>
+				  Registrarse</a>
+  
+		  </p>
+		<a class="nav-link" routerLink="/login">Regresar</a>
 	  </form>
+	
 	</div>
   </div>
