@@ -4,15 +4,22 @@
   
 	  <h2 class="login-header">Login</h2>
   
-	  <form #frmLogin="ngForm" class="login-container" (ngSubmit)="onLogin(frmLogin)">
+	  <form #frmLogin="ngForm" class="login-container shadow filtro" (ngSubmit)="onLogin(frmLogin)">
 		<p>
 		  <input type="email" name="email" placeholder="Email" ngModel required>
 		</p>
 		<p>
 		  <input type="password" name="password" placeholder="Contraseña" ngModel required>
 		</p>
-		<p>
-		  <input type="submit" value="Login">
+		<p class="centrarBoton" >
+		  <!-- <input type="submit" value="Login"> -->
+			<a href="../photos-list/" class="boton" id="servicioss">
+				<span id="span1"></span>
+				<span id="span2"></span>
+				<span id="span3"></span>
+				<span id="span4" ></span>
+				Ingresar</a>
+
 		</p>
 		<br>
 		<br>

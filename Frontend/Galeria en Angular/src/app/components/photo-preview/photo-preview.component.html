@@ -9,13 +9,13 @@
             </div>
         </div>
         <div class="col-md-7">
-            <div class="card">
-                <form class="card-body" (submit)="updatePhoto(title, description)">
+            <div class="card shadow filtro">
+                <form class="card-body " (submit)="updatePhoto(title, description)">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Photo's Title" [value]="photo.title" #title>
+                        <input type="text" class="form-control" placeholder="Título" [value]="photo.title" #title>
                     </div>
                     <div class="form-group">
-                        <textarea rows="2" class="form-control" placeholder="Photo's Description" [value]="photo.description" #description></textarea>
+                        <textarea rows="2" class="form-control" placeholder="Descripción" [value]="photo.description" #description></textarea>
                     </div>
                     <button class="btn btn-primary btn-block">
                         Actualizar
@@ -24,7 +24,7 @@
             </div>
         </div>
     </div>
-    <button class="btn btn-danger" (click)="deletePhoto(photo._id)">
+    <button class="btn " (click)="deletePhoto(photo._id)">
         Eliminar
     </button>
 </ng-template>
